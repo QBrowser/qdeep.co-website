@@ -1,0 +1,132 @@
+.tab-manager {
+  background-color: rgba(34, 34, 34, 0.95);
+  padding: 0px;
+  max-width: 100%;
+  margin: 0;
+  position: relative;
+
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.window-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.win-btn {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.win-btn:hover {
+  background-color: #0af;
+}
+
+.tab-bar {
+  display: flex;
+  padding-bottom: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.tab {
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.tab.active {
+  background-color: #0af;
+  transform: scale(1.05);
+}
+
+.tab:hover {
+  background-color: #09d;
+
+}
+
+.tab input {
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 4px;
+  border-radius: 4px;
+  width: 100px;
+}
+
+.close-btn {
+  margin-left: 8px;
+  color: #f00;
+  cursor: pointer;
+}
+
+.add-tab-btn {
+  background-color: #0af;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.add-tab-btn:hover {
+  transform: scale(1.2);
+}
+
+.tab-input {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  gap: 10px;
+
+}
+
+.tab-input input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.tab-input input:focus {
+  border-color: #0af;
+  box-shadow: 0 0 10px #0af;
+}
+
+.reload-btn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 50px;
+  z-index: 2; /* تأكد أنه فوق أي عنصر */
+  position: relative; /* مهم مع z-index */
+}
+

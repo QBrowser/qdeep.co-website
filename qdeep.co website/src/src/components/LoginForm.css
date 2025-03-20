@@ -1,0 +1,108 @@
+/* Form Styling */
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.8s ease;
+}
+
+.login-form {
+  background-color: rgba(34, 34, 34, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  animation: slideInUp 0.8s ease;
+}
+
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #0af;
+  text-shadow: 0 0 10px #0af;
+}
+
+
+.login-form label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.login-form input {
+  width: 90%;
+  margin-bottom: 15px;
+  background-color: #222;
+  color: white;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #0af;
+  box-shadow: 0 0 8px #0af;
+}
+
+.login-form button {
+  width: 95%;
+  padding: 12px;
+  background-color: #0af;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+  margin-top: 10px;
+}
+
+.login-form button:hover {
+  background-color: #09d;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.9);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background: #f00;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #c00;
+  transform: scale(1.2);
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}

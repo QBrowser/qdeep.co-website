@@ -1,0 +1,47 @@
+.user-avatar-container {
+  display: flex;
+  top: -70px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  margin-right: auto;
+  margin-left: -20px; /* لدفعها إلى اليمين */
+
+}
+
+
+.user-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 100;
+  margin-left: 10px; /* لدفعها إلى اليمين */
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.user-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-dropdown ul li {
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.user-dropdown ul li:hover {
+  background-color: #09d;
+  color: black;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
